@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Layout</title>
+  <link rel="stylesheet" type="text/css" href="./assets/styles/index.css" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-section">
+      <div class="appbar">
+        <p>
+          Appbar
+
+          <button id="menu-button">
+            <img src="./assets/svgs/menu-alt-2-svgrepo-com.svg" alt="menu-icon" />
+          </button>
+        </p>
+
+        <nav id="nav">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Furniture</li>
+            <li>Contact Us</li>
+            <li class="login-button">Log in</li>
+            <li class="signup-button">Sign Up</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero-text">
+        <h1 class="title">Everyone Loves To Welcome A Good Furniture</h1>
+      </div>
+    </div>
+
+    <div class="about">
+      <h2 class="title">Who we are</h2>
+
+      <div class="about-child-container">
+        <div class="about-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ullamcorper accumsan turpis quis quis at. Nec, nisi dis duis urna,
+            elit justo, euismod. Ultricies fermentum nibh in ut quis lacus
+            sollicitudin proin. Eu sit enim ullamcorper nisl id est. A
+            pulvinar ut fringilla vulputate feugiat lobortis phasellus mattis
+            dignissim. Dapibus sed quam venenatis platea. Et pharetra,
+            convallis nec volutpat. Sed id et sed diam. Diam leo ipsum, urna
+            in lorem amet euismod.
+          </p>
+        </div>
+        <div class="about-gallery">
+          <div class="col">
+            <img src="./assets/images/product-1.png" alt="chair" class="product-image" />
+            <div class="product-details">
+              <p>Light brown
+                chair with wooden legs
+              </p>
+              <span>$100</span>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./assets/images/product-2.png" alt="chair" class="product-image" />
+            <div class="product-details">
+              <p>Light brown
+                chair with wooden legs
+              </p>
+              <span>$100</span>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./assets/images/product-3.png" alt="chair" class="product-image" />
+            <div class="product-details">
+              <p>Light brown
+                chair with wooden legs
+              </p>
+              <span>$100</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="./assets/svgs/next-998-svgrepo-com.svg" />
+      </div>
+    </div>
+
+    <div class="contact-us">
+      <h1 class="title">Drop a message</h1>
+
+      <div class="contact-form-child-container">
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label class="label">Name</label>
+              <input class="form-control text-input" type="text" name="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+              <label class="label">Mobile No</label>
+              <input class="form-control phone-input" type="text" name="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+              <label class="label">Message</label>
+              <textarea class="form-control phone-input" type="text" name="name"
+                placeholder="Enter your name"></textarea>
+            </div>
+            <div class="form-control">
+              <button type="submit">send</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-picture">
+          <div class="col">
+            <img width="450" height="500" src="./assets/images/pexels-jibarofoto-2111759.jpg" alt="contact us" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="col">
+          <p>Our Company</p>
+          <nav>
+            <ul>
+              <li>About us</li>
+              <li>Become a partner</li>
+              <li>Contact us</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <p>Learn more</p>
+          <nav>
+            <ul>
+              <li>How it works</li>
+              <li>FAQs</li>
+              <li>Terms and Conditions</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <h3>SUBSCRIBE</h3>
+          <div>
+            <input type="email" placeholder="Input your email address" />
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        By using this website you accept our Terms and use and Private Policy
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const menuIcon = document.querySelector('#menu-button');
+    const nav = document.querySelector('#nav');
+
+    if (window.innerWidth < 1000) {
+      nav.style.display = 'none'
+    }
+
+    menuIcon.addEventListener('click', (e) => {
+      nav.style.display = nav.style.display === 'none' ? 'block' : 'none'
+    })
+  </script>
+</body>
+
+
+</html>

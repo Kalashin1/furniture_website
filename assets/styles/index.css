@@ -1,0 +1,654 @@
+* {
+  font-size: 14;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM_SANS';
+}
+
+@font-face {
+  font-family: "DM_SANS";
+  src: url(../fonts/dm-sans.ttf);
+}
+
+.title {
+  font-family: "DM_SANS";
+  font-size: 30;
+  font-weight: 700;
+}
+
+.container {
+  overflow: hidden;
+}
+
+div.container,
+.about,
+div.contact-us {
+  width: 100%;
+}
+
+
+.about {
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.about,
+div.contact-us {
+  padding: 3rem;
+  height: 110vh;
+}
+
+.about>h2,
+div.contact-us>h1 {
+  font-size: 19;
+  margin: .5rem;
+}
+
+.about-child-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-child-container>.about-text {
+  width: 50%;
+  font-size: 18;
+  margin-right: 4vw;
+}
+
+.about-gallery {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-gallery>.col {
+  width: 30%;
+  height: 30%;
+  margin-right: 20px;
+}
+
+div.hero-section::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.hero-section {
+  background-image: url(../images/pexels-heyho-6969830.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 110vh;
+  color: white;
+}
+
+div.hero-section>.hero-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+div.hero-section>.hero-text h1 {
+  font-size: 80px;
+  margin-top: 25vh;
+  width: 100%;
+  padding: 0;
+}
+
+div.hero-section>.appbar {
+  width: 100%;
+  padding: 0.8rem 0.8rem;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  z-index: 10;
+  align-items: center;
+}
+
+.appbar nav {
+  padding: 0 .5rem;
+  width: 50%;
+}
+
+.appbar nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.appbar nav ul li {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login-button,
+.signup-button {
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: .35rem .7rem;
+}
+
+.signup-button {
+  background-color: #D4B170;
+  border: 0;
+}
+
+.contact-us {
+  background-color: #CDC8CC;
+  color: white;
+}
+
+.contact-form-child-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form-child-container {
+  width: 100%;
+}
+
+.contact-picture {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.footer {
+  height: 80vh;
+  background-color: whitesmoke;
+  display: flex;
+  width: 100vw;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer-container {
+  width: 90%;
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container .col {
+  height: 50vh;
+  width: 25%;
+  margin: .5rem;
+}
+
+.footer-container .col:nth-of-type(3) {
+  width: 50%;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  padding: .5rem 2rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #A4A4A3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+
+.product-image {
+  width: 250px;
+  height: 300px;
+}
+
+.product-details {
+  font-size: 18;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form-group .label {
+  font-size: 18px;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+.contact-form-child-container {
+  width: 100%;
+}
+
+.contact-form-child-container .contact-form {
+  width: 50%;
+}
+
+.contact-form-child-container .contact-picture {
+  width: 50%;
+}
+
+.form-group .form-control {
+  width: 80%;
+  border-radius: 10px;
+  padding: .8rem 1.5rem;
+  background-color: #E7E7E7;
+  color: #CDC8CC;
+  outline: 0;
+  border: 0;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.form-control button {
+  padding: .5rem 1.5rem;
+  background-color: #000;
+  border-radius: .4rem;
+  color: white;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  right: 7rem;
+  bottom: -3rem;
+  cursor: pointer;
+}
+
+
+.footer .col h3,
+.footer .col p {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  font-size: 24px;
+}
+
+
+.footer .col ul {
+  list-style: none;
+}
+
+.footer .col ul li {
+  font-weight: bold;
+  margin: .8rem 0;
+}
+
+.footer .col div {
+  position: relative;
+}
+
+.footer .col div input {
+  width: 100%;
+  border-radius: 10px;
+  padding: .8rem 1.5rem;
+  background-color: #E7E7E7;
+  color: #CDC8CC;
+  outline: 0;
+  border: 0;
+}
+
+.footer .col div button {
+  background-color: black;
+  padding: .7rem 1.5rem;
+  position: absolute;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  right: -12px;
+  border-radius: .7rem;
+}
+
+div.hero-section>.appbar p {
+  display: block;
+}
+
+div.hero-section>.appbar p button {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+
+  div.hero-section>.appbar p {
+    padding: .5rem .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.hero-section>.appbar p button {
+    display: block;
+  }
+
+
+  div.hero-section>.appbar {
+    display: block;
+    padding: 1rem .8rem;
+  }
+
+  .appbar nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  .appbar nav ul {
+    display: block;
+    width: 100%;
+    margin-top: .5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .appbar nav ul li {
+    padding: .5rem .8rem;
+    cursor: pointer;
+  }
+
+  .login-button,
+  .signup-button {
+    margin-top: .8rem;
+    cursor: pointer;
+  }
+
+  div.hero-section>.hero-text h1 {
+    padding: .5rem;
+    font-size: 46px;
+    margin: auto 0;
+    margin-top: 0;
+  }
+
+  .about-child-container {
+    display: block;
+  }
+
+  .about-child-container .about-text {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .about-child-container .about-gallery {
+    display: block;
+    width: 100%;
+  }
+
+  .about-gallery>.col {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .avatar {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .about,
+  div.contact-us {
+    height: fit-content !important;
+  }
+
+
+
+  .contact-form-child-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form-child-container div.contact-form,
+  .contact-form-child-container div.contact-picture {
+    width: 100%;
+  }
+
+  .contact-form-child-container div.contact-picture {
+    display: none;
+  }
+
+
+  .form-group .form-control {
+    width: 100%;
+  }
+
+  .form-control button {
+    position: static;
+  }
+
+  .footer {
+    padding: 0 1rem;
+  }
+
+
+  .footer-container {
+    width: 100%;
+    display: block;
+    padding: 1rem .6rem;
+  }
+
+  .footer-container .col {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: fit-content;
+  }
+
+  .footer-container .col:nth-of-type(3) {
+    width: 80%;
+  }
+
+  .footer .col ul {
+    margin-bottom: 1rem;
+  }
+
+  .footer .col ul li {
+    font-weight: bold;
+    margin: .8rem 0;
+  }
+
+  .footer .col h3,
+  .footer .col p {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding: .5rem .5rem;
+    position: absolute;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  div.hero-section>.appbar p {
+    padding: .5rem .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.hero-section>.appbar p button {
+    display: block;
+  }
+
+
+  div.hero-section>.appbar {
+    display: block;
+    padding: 1rem .8rem;
+  }
+
+  .appbar nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  .appbar nav ul {
+    display: block;
+    width: 100%;
+    margin-top: .5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .appbar nav ul li {
+    padding: .5rem .8rem;
+    cursor: pointer;
+  }
+
+  .login-button,
+  .signup-button {
+    margin-top: .8rem;
+    cursor: pointer;
+  }
+
+  .about {
+    height: fit-content;
+  }
+
+  .about-child-container {
+    display: block;
+  }
+
+  .about-child-container .about-text {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .about-child-container .about-gallery {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .avatar {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .contact-us {
+    height: 50vh;
+  }
+
+  .contact-form-child-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form-child-container div.contact-form,
+  .contact-form-child-container div.contact-picture {
+    width: 100%;
+  }
+
+  .contact-form-child-container div.contact-picture {
+    display: none;
+  }
+
+  .form-group .form-control {
+    width: 100%;
+  }
+
+  .form-control button {
+    position: static;
+  }
+
+  .about,
+  div.contact-us {
+    height: fit-content
+  }
+
+  .contact-us {
+    padding: 2rem 1rem;
+  }
+
+  .footer {
+    padding: 0 1rem;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .footer-container .col {
+    height: auto;
+    width: 35%;
+    margin-bottom: .5rem;
+  }
+
+
+  .footer-container .col:nth-of-type(3) {
+    width: 35%;
+  }
+
+  .footer .col h3,
+  .footer .col p {
+    font-weight: bold;
+    margin-bottom: 3rem;
+    font-size: 18px;
+  }
+
+  .footer .col ul {
+    margin-bottom: 1rem;
+  }
+
+  .footer .col ul li {
+    font-weight: bold;
+    margin: .8rem 0;
+  }
+
+  .footer-bottom {
+    left: 0;
+  }
+
+}
